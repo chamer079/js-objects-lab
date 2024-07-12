@@ -50,31 +50,22 @@ console.log(game)
 
 
 /*
-Exercise 4
-1. Select a starter Pokémon from the `pokemon` array. Remember, a starter Pokémon's `starter` property is true.
-2. Add this Pokémon to the `game.party` array. Which array method will you use to add them?
-
-
-Solve Exercise 4 here:
-*/
-
-
-/*
 Exercise 5
 1. Choose three more Pokémon from the `pokemon` array and add them to your party.
 2. Consider different attributes like 'type' or 'HP' for your selection. Which array method will you use to add them?
 
-
 Solve Exercise 5 here:
 */
+game.party.push(pokemon[7])
+game.party.push(pokemon[64])
+game.party.push(pokemon[93])
 
-
+console.log(game)
 
 /*
 Exercise 6
 1. Set the `completed` property to true for gyms with a difficulty below 3.
 2. Think about how you'd loop through the `gyms` array to check and update the `completed` property.
-
 
 Solve Exercise 6 here:
 */
@@ -93,7 +84,6 @@ Hint:
 
 More Hints: The existing starter Pokemon will be *replaced* in your party with the Pokemon it evolved into. When working with an array of objects, the splice() array method is ideal for replacing one element with another. 
 
-
 Solve Exercise 7 here:
 */
 
@@ -111,7 +101,6 @@ Solve Exercise 8 here:
 Exercise 9
 1. Can you print out all the starter Pokémon from the `pokemon` array?
 2. Think about how you can identify a starter Pokémon and then log their names.
-
 
 Solve Exercise 9 here:
 */
@@ -205,16 +194,16 @@ Solve Exercise 15 here:
 Exercise 16
 1. Log the entire `game` object to the console. Take a moment to review the changes you've made throughout the exercises.
 
-
 Solve Exercise 16 here:
 */
+
+
 
 // ------ LEVEL UP ------
 /*
 Exercise 17
 1. Arrange the Pokémon in `game.party` by their HP. The one with the highest HP should come first.
 2. You'll need to use the `.sort()` method. How does the compare function work in sorting numbers?
-
 
 Solve Exercise 17 here:
 */
