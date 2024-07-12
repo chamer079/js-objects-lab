@@ -32,7 +32,9 @@ Exercise 3 - update game obj
 
 Solve Exercise 3 here:
 */
+game.difficulty = "easy"
 
+// console.log(game)
 
 
 /*
