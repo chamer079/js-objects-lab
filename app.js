@@ -144,11 +144,15 @@ Solve Exercise 10 here:
 */
 game.catchPokemon = function(pokemonObj){
   game.party.push(pokemonObj)
+
+  console.log(game.party) // <--prints party arr
+  console.log(pokemonObj) // <--prints Drogonite
 }
 
+console.log(game.catchPokemon)  //<-- prints code method code block
 
-console.log(game)
-console.log(game.catchPokemon(pokemon[148]))
+console.log(game.catchPokemon(pokemon[148]))  // <--prints undefined
+
 
 /*
 Exercise 11
