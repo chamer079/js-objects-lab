@@ -95,7 +95,9 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 Solve Exercise 7 here:
 */
 game.party.splice(0, 1, pokemon[1])
+
 console.log(game.party)
+
 
 /*
 Exercise 8
@@ -104,6 +106,15 @@ Exercise 8
 
 Solve Exercise 8 here:
 */
+// forEach() Solution
+game.party.forEach((entry) => {
+  console.log(entry.name)
+})
+
+// array method   -> revisit this!
+// game.party.slice()
+
+// console.log(game.party)
 
 
 /*
