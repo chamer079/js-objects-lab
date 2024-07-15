@@ -34,7 +34,7 @@ Solve Exercise 3 here:
 */
 game.difficulty = "easy"
 
-// console.log(game)
+console.log(game)
 
 
 /*
@@ -62,6 +62,7 @@ game.party.push(pokemon[93])
 
 console.log(game)
 
+
 /*
 Exercise 6
 1. Set the `completed` property to true for gyms with a difficulty below 3.
@@ -69,6 +70,20 @@ Exercise 6
 
 Solve Exercise 6 here:
 */
+// for(let key in game){
+//   if(game.difficulty <= 3){
+//     game.completed = true
+//   }
+// }
+
+Object.entries(game.gyms).forEach(function(entery){
+  console.log(entery)
+  if(game.gyms[0].difficulty <= 3){
+    game.gyms[0].completed = true
+  }
+})
+
+console.log(game)
 
 
 /*
