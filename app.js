@@ -94,7 +94,8 @@ More Hints: The existing starter Pokemon will be *replaced* in your party with t
 
 Solve Exercise 7 here:
 */
-
+game.party.splice(0, 1, pokemon[1])
+console.log(game.party)
 
 /*
 Exercise 8
