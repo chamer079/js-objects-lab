@@ -124,6 +124,11 @@ Exercise 9
 
 Solve Exercise 9 here:
 */
+pokemon.forEach((entryLevel) =>{
+  if(entryLevel.starter === true){
+    console.log(entryLevel.name)
+  }
+})
 
 
 /*
