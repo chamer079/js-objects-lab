@@ -70,16 +70,9 @@ Exercise 6
 
 Solve Exercise 6 here:
 */
-// for(let key in game){
-//   if(game.difficulty <= 3){
-//     game.completed = true
-//   }
-// }
-
-Object.entries(game.gyms).forEach(function(entery){
-  console.log(entery)
-  if(game.gyms[0].difficulty <= 3){
-    game.gyms[0].completed = true
+game.gyms.forEach((entry) => {
+  if(entry.difficulty <= 3){
+    entry.completed = true
   }
 })
 
