@@ -177,7 +177,13 @@ Exercise 12
 
 Solve Exercise 12 here:
 */
+game.gyms.forEach((entry) => {
+  if(entry.difficulty <= 6) {
+    entry.completed = true
+  }
+})
 
+console.log(game.gyms)
 
 /*
 Exercise 13
