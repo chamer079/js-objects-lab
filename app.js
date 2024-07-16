@@ -142,16 +142,10 @@ After writing this method, call it and pass in a Pokemon object of your choice f
 
 Solve Exercise 10 here:
 */
-game.catchPokemon = function(pokemonObj){
+game.catchPokemon = (pokemonObj) => {
   game.party.push(pokemonObj)
-
-  console.log(game.party) // <--prints party arr
-  console.log(pokemonObj) // <--prints Drogonite
 }
 
-console.log(game.catchPokemon)  //<-- prints code method code block
-
-console.log(game.catchPokemon(pokemon[148]))  // <--prints undefined
 
 
 /*
@@ -207,7 +201,7 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
-
+    // will probably need to use sort()...?
 
 /*
 Exercise 14
