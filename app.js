@@ -146,6 +146,8 @@ game.catchPokemon = (pokemonObj) => {
   game.party.push(pokemonObj)
 }
 
+game.catchPokemon(pokemon[148])
+console.log(game.party)  
 
 
 /*
@@ -177,7 +179,7 @@ game.gyms.forEach((entry) => {
   }
 })
 
-console.log(game.gyms)
+// console.log(game.gyms)
 
 /*
 Exercise 13
