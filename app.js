@@ -162,8 +162,21 @@ Also, log the `game.items` array to confirm that the pokeball quantity is being 
 
 Solve Exercise 11 here:
 */
+  // 1)Copy method over from previous problem
+  // 2)Modify method to also decrease the num of pokeballs for each time catching a pokemon -> games.items
+    // Incorporate a new parameter (pokeBallInv) to game.catchPokemon()...?
+    // Iterate through game.items 
+    // if/else statement...?
+        // Condition = game.items === "pokeball"
+        // Executes = decrease pokeball by 1
+  // 3)Call the new method w/ pokemon.index of choice from data.js
+  // 4)Pokeball confirmation: console.log(game.items) to confirm if the quantity of pokeballs has decreased
+
+game.catchPokemon = (pokemonObj) => {
+    game.party.push(pokemonObj)
 
 
+}
 
 
 /*
