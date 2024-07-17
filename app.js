@@ -46,7 +46,7 @@ Solve Exercise 4 here:
 */
 game.party.push(pokemon[0])
 
-console.log(game)
+console.log(game.party)
 
 
 /*
@@ -60,7 +60,7 @@ game.party.push(pokemon[7])
 game.party.push(pokemon[64])
 game.party.push(pokemon[93])
 
-console.log(game)
+console.log(game.party)
 
 
 /*
@@ -71,7 +71,7 @@ Exercise 6
 Solve Exercise 6 here:
 */
 game.gyms.forEach((entry) => {
-  if(entry.difficulty <= 3){
+  if(entry.difficulty <= 2){
     entry.completed = true
   }
 })
@@ -175,17 +175,15 @@ Solve Exercise 11 here:
 game.catchPokemon = (pokemonObj) => {
     game.party.push(pokemonObj)
 
-    if(game.items === "pokeball"){
-      game.quantity -= 1
-    }
-    
-    
-    console.log("test, #11")
+    game.items.forEach((pokeballInventory) => {
+      if(pokeballInventory.name === "pokeball"){
+        pokeballInventory.quantity -= 1
+      }
+    })
 }
 
 game.catchPokemon(pokemon[142])
 
-console.log(game.party)
 console.log(game.items)
 
 
@@ -202,7 +200,7 @@ game.gyms.forEach((entry) => {
   }
 })
 
-console.log(game.gyms)
+// console.log(game.gyms)
 
 /*
 Exercise 13
