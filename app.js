@@ -175,8 +175,18 @@ Solve Exercise 11 here:
 game.catchPokemon = (pokemonObj) => {
     game.party.push(pokemonObj)
 
-
+    if(game.items === "pokeball"){
+      game.quantity -= 1
+    }
+    
+    
+    console.log("test, #11")
 }
+
+game.catchPokemon(pokemon[142])
+
+console.log(game.party)
+console.log(game.items)
 
 
 /*
@@ -187,12 +197,12 @@ Exercise 12
 Solve Exercise 12 here:
 */
 game.gyms.forEach((entry) => {
-  if(entry.difficulty <= 6) {
+  if(entry.difficulty <= 5) {
     entry.completed = true
   }
 })
 
-// console.log(game.gyms)
+console.log(game.gyms)
 
 /*
 Exercise 13
@@ -216,7 +226,10 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
-    // will probably need to use sort()...?
+// game.gyms.forEach((gymStatus) => {
+//   if()
+// })   
+
 
 /*
 Exercise 14
