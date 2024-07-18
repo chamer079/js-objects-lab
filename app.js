@@ -294,8 +294,8 @@ Exercise 17
 
 Solve Exercise 17 here:
 */
-game.party.sort((pokemonB, pokemonA) => {
-  console.log(pokemonB.hp - pokemonA.hp)
+game.party.sort((pokemonA, pokemonB) => { 
+  console.log(pokemonB.hp - pokemonA.hp) // <- prints in order: 1, 4, -5, -31, -69
 })
 
 console.log(game.party)
