@@ -228,7 +228,6 @@ let gameTally = {
   incomplete: 0,
 }
 
-
 game.gymStatus = () => {
   game.gyms.forEach((gym) => {
     if(gym.completed === true){
@@ -242,6 +241,7 @@ game.gymStatus = () => {
 game.gymStatus()
 console.log(gameTally)
 
+
 /*
 Exercise 14
 1. Add a `partyCount` method to `game` that counts the number of Pokémon in your party.
@@ -253,9 +253,12 @@ This method should:
 
 Solve Exercise 14 here:
 */ 
+game.partyCount = () => {
+ return game.party.length 
+}
 
-
-console.log("sanity check", game)
+game.partyCount()
+console.log(game.partyCount())
 
 
 /*
