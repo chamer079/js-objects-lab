@@ -76,7 +76,7 @@ game.gyms.forEach((gymLevel) => {
   }
 })
 
-console.log(game.gyms)
+console.log(game)
 
 
 /*
@@ -223,19 +223,23 @@ For example, if five gym objects have a value of `true` on their `completed` pro
 
 Solve Exercise 13 here:
 */
-const gameTally = {
+let gameTally = {
   complete: 0,
   incomplete: 0,
 }
 
-game.gyms.forEach((gymStatus) => {
-  if(gymStatus.completed === true){
-    gameTally.complete += 1
-  } else {
-    gameTally.incomplete += 1
-  }  
-})   
 
+game.gymStatus = () => {
+  game.gyms.forEach((gym) => {
+    if(gym.completed === true){
+      gameTally.complete += 1
+    } else {
+      gameTally.incomplete += 1
+    }  
+  })   
+}
+
+game.gymStatus()
 console.log(gameTally)
 
 /*
