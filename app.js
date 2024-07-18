@@ -70,13 +70,13 @@ Exercise 6
 
 Solve Exercise 6 here:
 */
-game.gyms.forEach((entry) => {
-  if(entry.difficulty <= 2){
-    entry.completed = true
+game.gyms.forEach((gymLevel) => {
+  if(gymLevel.difficulty <= 2){
+    gymLevel.completed = true
   }
 })
 
-console.log(game)
+console.log(game.gyms)
 
 
 /*
@@ -183,7 +183,6 @@ game.catchPokemon = (pokemonObj) => {
 }
 
 game.catchPokemon(pokemon[142])
-
 console.log(game.items)
 
 
@@ -194,9 +193,9 @@ Exercise 12
 
 Solve Exercise 12 here:
 */
-game.gyms.forEach((entry) => {
-  if(entry.difficulty <= 5) {
-    entry.completed = true
+game.gyms.forEach((gymLevel) => {
+  if(gymLevel.difficulty <= 5) {
+    gymLevel.completed = true
   }
 })
 
@@ -252,6 +251,7 @@ Solve Exercise 14 here:
 */ 
 
 
+console.log("sanity check", game)
 
 
 /*
@@ -261,6 +261,13 @@ Exercise 15
 
 Solve Exercise 15 here:
 */
+game.gyms.forEach((gymLevel) => {
+  if(gymLevel.difficulty <= 7){
+    gymLevel.completed = true
+  }
+})
+
+console.log(game.gyms)
 
 
 /*
@@ -269,7 +276,7 @@ Exercise 16
 
 Solve Exercise 16 here:
 */
-
+console.log(game)
 
 
 // ------ LEVEL UP ------
