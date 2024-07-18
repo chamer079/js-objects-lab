@@ -294,6 +294,11 @@ Exercise 17
 
 Solve Exercise 17 here:
 */
+game.party.sort((pokemonB, pokemonA) => {
+  console.log(pokemonB.hp - pokemonA.hp)
+})
+
+console.log(game.party)
 
 
 /*
